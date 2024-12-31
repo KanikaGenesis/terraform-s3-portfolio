@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanika Mathur - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            color: #333;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ff6f61;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        .section {
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        footer {
+            background: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skills .skill {
+            background: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kanika Mathur</h1>
+            <p>Software Developer | Cloud Enthusiast | Mentor</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="https://myterraformproject2024-kanika.s3.us-east-1.amazonaws.com/myPicture.jpg" alt="Kanika Mathur" class="profile-image">
+            <p>I'm Kanika Mathur, a dedicated software developer with a passion for creating impactful solutions in cloud computing, machine learning, and generative AI. With a strong academic foundation and diverse professional experiences, I aim to innovate and inspire in the world of technology.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>BankerBot</h3>
+                    <p>A smart banking chatbot developed using Amazon Lex and AWS Lambda, streamlining banking interactions with AI.</p>
+                </li>
+                <li>
+                    <h3>Cloud DevOps Pipeline</h3>
+                    <p>Created a complete CI/CD pipeline, showcasing expertise in Cloud9, CodePipeline, and infrastructure automation.</p>
+                </li>
+                <li>
+                    <h3>Generative AI Web Application</h3>
+                    <p>A web app that utilizes the OpenAI API for generating images, chat responses, and recipes, featuring a polished CSS design.</p>
+                </li>
+                <li>
+                    <h3>Serverless Framework Testing</h3>
+                    <p>Implemented and tested serverless functions locally using AWS Lambda and Beekeeper Studio for efficient backend workflows.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">AWS</div>
+                <div class="skill">Cloud Computing</div>
+                <div class="skill">Generative AI</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">CI/CD Pipelines</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mkanika.90@gmail.com">mkanika.90@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kanika-mathur-083080121/" target="_blank">LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/KanikaGenesis" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
