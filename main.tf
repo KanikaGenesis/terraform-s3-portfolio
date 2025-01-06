@@ -23,15 +23,6 @@ resource "aws_s3_bucket_public_access_block" "example" {
   restrict_public_buckets = false
 }
 
-# resource "aws_s3_bucket_acl" "example" {
-#   depends_on = [
-#     aws_s3_bucket_ownership_controls.example,
-#     aws_s3_bucket_public_access_block.example,
-#   ]
-
-#   bucket = aws_s3_bucket.mybucket.id
-#   acl    = "public-read"
-# }
 
 resource "aws_s3_bucket_policy" "public_read_policy" {
   bucket = aws_s3_bucket.mybucket.id
@@ -65,11 +56,31 @@ resource "aws_s3_object" "error" {
   content_type = "text/html"
 }
 
+resource "aws_s3_object" "style" {
+  bucket = aws_s3_bucket.mybucket.id
+  key    = "style.css"
+  source = "style.css"
+  content_type = "text/css"
+}
+
 resource "aws_s3_object" "myPicture" {
   bucket = aws_s3_bucket.mybucket.id
   key    = "myPicture.jpg"
   source = "myPicture.jpg"
 }
+
+resource "aws_s3_object" "cloudImage"{
+  bucket = aws_s3_bucket.mybucket.id
+  key    = "cloudImage.jpg"
+  source = "cloudImage.jpg"
+}
+
+resource "aws_s3_object" "heroImage"{
+  bucket = aws_s3_bucket.mybucket.id
+  key    = "heroImage.jpg"
+  source = "heroImage.jpg"
+}
+
 
 resource "aws_s3_bucket_website_configuration" "website" {
   bucket = aws_s3_bucket.mybucket.id
