@@ -28,7 +28,7 @@ body {
 /* Hero Section */
 .bgimage {
   height: 100vh;
-  background: url('heroImage.jpg') no-repeat center center/cover;
+  background: url('https://myterraformproject2024-kanika.s3.us-east-1.amazonaws.com/heroImage.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
